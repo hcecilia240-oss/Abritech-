@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Materiales | ABRITECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ABRITECH</div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Productos</a>
+        <a href="calculador.html">Calculador</a>
+        <a href="carrito.html" class="cart-btn" aria-label="Ver carrito">
+            🛒 <span id="cart-count">0</span>
+        </a>
+    </nav>
+</header>
+
+<main class="container">
+    <h1 class="section-title">Catálogo de Materiales</h1>
+
+    <div class="filters">
+        <button class="btn-filter active">Todos</button>
+        <button class="btn-filter">Maderas</button>
+        <button class="btn-filter">Chapas</button>
+        <button class="btn-filter">Durlock</button>
+        <button class="btn-filter">Aislantes</button>
+    </div>
+
+    <div class="productos-grid">
+        
+        <article class="producto-card" data-category="maderas">
+            <h3>Machimbre</h3>
+            <div class="opciones">
+                <label>Espesor</label>
+                <select>
+                    <option value="1 pulgada">1 pulgada</option>
+                    <option value="1/2 pulgada">1/2 pulgada</option>
+                </select>
+                
+                <label>Largo</label>
+                <select>
+                    <option value="2.40 mts">2.40 mts</option>
+                    <option value="3.00 mts">3.00 mts</option>
+                </select>
+            </div>
+            <p class="precio-tag">Precio a cotizar</p>
+            <div class="compra-flex">
+                <input type="number" value="1" min="1" aria-label="Cantidad">
+                <button class="btn-add">Añadir</button>
+            </div>
+        </article>
+
+        <article class="producto-card" data-category="maderas">
+            <h3>Tirante</h3>
+            <div class="opciones">
+                <label>Madera</label>
+                <select>
+                    <option value="Pino Paraná">Pino Paraná</option>
+                    <option value="Eucalipto">Eucalipto</option>
+                </select>
+                
+                <label>Medida</label>
+                <select>
+                    <option value="2x3">2" x 3"</option>
+                    <option value="2x6">2" x 6"</option>
+                </select>
+            </div>
+            <p class="precio-tag">Precio a cotizar</p>
+            <div class="compra-flex">
+                <input type="number" value="1" min="1" aria-label="Cantidad">
+                <button class="btn-add">Añadir</button>
+            </div>
+        </article>
+
+        <article class="producto-card" data-category="chapas">
+            <h3>Chapa Trapezoidal</h3>
+            <div class="opciones">
+                <label>Calibre</label>
+                <select>
+                    <option value="C-25">Calibre 25</option>
+                    <option value="C-27">Calibre 27</option>
+                </select>
+                <label>Color</label>
+                <select>
+                    <option value="Cincalum">Cincalum</option>
+                    <option value="Negro Prepintado">Negro Prepintado</option>
+                </select>
+            </div>
+            <p class="precio-tag">Precio a cotizar</p>
+            <div class="compra-flex">
+                <input type="number" value="1" min="1" aria-label="Cantidad">
+                <button class="btn-add">Añadir</button>
+            </div>
+        </article>
+
+        <article class="producto-card" data-category="durlock">
+            <h3>Placa de Yeso</h3>
+            <div class="opciones">
+                <label>Espesor</label>
+                <select>
+                    <option value="9 mm">9 mm</option>
+                    <option value="12.5 mm">12.5 mm</option>
+                </select>
+                <label>Tipo</label>
+                <select>
+                    <option value="Estándar">Estándar (Gris)</option>
+                    <option value="RH">Resistente Humedad (Verde)</option>
+                </select>
+            </div>
+            <p class="precio-tag">Precio a cotizar</p>
+            <div class="compra-flex">
+                <input type="number" value="1" min="1" aria-label="Cantidad">
+                <button class="btn-add">Añadir</button>
+            </div>
+        </article>
+
+        <article class="producto-card" data-category="aislantes">
+            <h3>Lana de Vidrio</h3>
+            <div class="opciones">
+                <label>Espesor</label>
+                <select>
+                    <option value="38 mm">38 mm</option>
+                    <option value="50 mm">50 mm</option>
+                </select>
+                <label>Recubrimiento</label>
+                <select>
+                    <option value="Fieltro Liviano">Fieltro Liviano</option>
+                    <option value="Con Aluminio">Con Aluminio</option>
+                </select>
+            </div>
+            <p class="precio-tag">Precio a cotizar</p>
+            <div class="compra-flex">
+                <input type="number" value="1" min="1" aria-label="Cantidad">
+                <button class="btn-add">Añadir</button>
+            </div>
+        </article>
+
+    </div>
+
+    <section class="presupuesto-resumen">
+        <h2>Tu Presupuesto</h2>
+        <p>Añade materiales para generar una lista y enviarla por WhatsApp.</p>
+        <button class="btn-whatsapp-send">
+            <i class="fab fa-whatsapp"></i> ENVIAR POR WHATSAPP
+        </button>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/LOGO NUEVO ABRITECH.PNG" alt="Logo Abritech">
+        </div>
+        <div class="footer-bottom">
+            <p>ABRITECH © 2026 - Todos los derechos reservados</p>
+            <p class="firma-dev">Desarrollo Web: <a href="https://wa.me/5491131758509" target="_blank">CECILIA HERNANDEZ</a></p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/5491122814493" class="whatsapp-fixed" target="_blank" aria-label="Chat por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
