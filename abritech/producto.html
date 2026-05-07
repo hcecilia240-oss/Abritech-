@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | ABRITECH</title>
+    <!-- Iconos y Estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ABRITECH</div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="calculador.html">Calculador</a>
+        <a href="carrito.html" class="cart-btn">🛒 <span id="cart-count">0</span></a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2 class="section-title">Catálogo de Materiales</h2>
+    
+    <!-- Filtros de Categoría Funcionales -->
+    <div class="filtros-container">
+        <button class="btn-filter active" data-filter="todos">Todos</button>
+        <button class="btn-filter" data-filter="maderas">Maderas</button>
+        <button class="btn-filter" data-filter="chapas">Chapas</button>
+        <button class="btn-filter" data-filter="durlock">Durlock</button>
+    </div>
+
+    <!-- Contenedor Grid de Productos -->
+    <div class="grid" id="contenedor-productos">
+        
+        <!-- Producto: Machimbre -->
+        <div class="card-sucursal producto maderas" style="background: white; color: #333;">
+            <div class="sucursal-header">
+                <span class="badge">Maderas</span>
+                <h3>Machimbre Pino 1/2 x 5</h3>
+            </div>
+            <div style="padding: 0 20px 20px;">
+                <p>Precio: Consultar</p>
+                <div class="hero-btns" style="margin-top: 15px; display: flex; gap: 10px;">
+                    <input type="number" value="1" min="1" id="cant-machimbre" style="width:60px; padding: 10px; border-radius:6px; border:1px solid #ddd;">
+                    <button class="btn-primary" onclick="agregarAlCarrito('Machimbre Pino 1/2x5', document.getElementById('cant-machimbre').value)">
+                        AÑADIR
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto: Chapa -->
+        <div class="card-sucursal producto chapas" style="background: white; color: #333;">
+            <div class="sucursal-header">
+                <span class="badge">Chapas</span>
+                <h3>Chapa Cincalum C27 Sinusoidal</h3>
+            </div>
+            <div style="padding: 0 20px 20px;">
+                <p>Precio: Consultar</p>
+                <div class="hero-btns" style="margin-top: 15px; display: flex; gap: 10px;">
+                    <input type="number" value="1" min="1" id="cant-chapa" style="width:60px; padding: 10px; border-radius:6px; border:1px solid #ddd;">
+                    <button class="btn-primary" onclick="agregarAlCarrito('Chapa Cincalum C27', document.getElementById('cant-chapa').value)">
+                        AÑADIR
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto: Durlock -->
+        <div class="card-sucursal producto durlock" style="background: white; color: #333;">
+            <div class="sucursal-header">
+                <span class="badge">Durlock</span>
+                <h3>Placa Durlock 12.5mm</h3>
+            </div>
+            <div style="padding: 0 20px 20px;">
+                <p>Precio: Consultar</p>
+                <div class="hero-btns" style="margin-top: 15px; display: flex; gap: 10px;">
+                    <input type="number" value="1" min="1" id="cant-durlock" style="width:60px; padding: 10px; border-radius:6px; border:1px solid #ddd;">
+                    <button class="btn-primary" onclick="agregarAlCarrito('Placa Durlock 12.5mm', document.getElementById('cant-durlock').value)">
+                        AÑADIR
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/LOGO NUEVO ABRITECH.PNG" alt="Abritech" style="height: 60px;">
+        </div>
+        <p>ABRITECH © 2026 - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<!-- Scripts de Funcionalidad -->
+<script src="js/app.js"></script>
+<script src="js/carrito.js"></script>
+
+</body>
+</html>
